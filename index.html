@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="icon" href="icon/pokedex.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <script defer src="https://app.embed.im/snow.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+
+    <!-- Seccion 1: Inicio -->
+    <section id="seccion1">
+
+        <!-- Navbar & DropDown -->
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">Pokedex</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pokedex">Pokedex</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pokemons">Pokemon's (No Disponible)</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Mas
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#trainers">Trainer's (No Disponible)</a>
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+
+        <!-- Video de Fondo -->
+        <div id="videoContenedor">
+            <video id="videoFondo" autoplay loop muted></video>
+            <div id="contenido">
+                <h1>Inicio</h1>
+                <p>
+                    La Pokedex es una pagina web dedicada al mundo de los Pokemon. <br>
+                    Aqui podras encontrar informacion detallada sobre diferentes <br>
+                    especies de Pokemon, sus caracteristicas, habilidades, movimientos y mucho mas
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Salto de linea en la seccion 2 -->
+    <div id="pokedex" class="logo-seccion">
+        <h1>Pokedex</h1>
+    </div>
+
+    <section id="seccion2">
+        <main>
+            <img src="#" alt="pokemon" class="pokemon__image">
+
+            <h1 class="pokemon__data">
+                <span class="pokemon__number"></span> -
+                <span class="pokemon__name"></span>
+            </h1>
+
+            <form class="form">
+                <input type="search" class="input__search" placeholder="Name or Number" required />
+            </form>
+
+            <div class="buttons">
+                <button class="button btn-prev">Prev &lt;</button>
+                <button class="button btn-next">Next &gt;</button>
+            </div>
+
+            <img src="img/pokedex.png" alt="pokedex" class="pokedex">
+        </main>
+    </section>
+
+    <div class="footer">
+        <p>Copyright &copy; All Right Reserved | Designed <span class="span">By Pokedex</span> 2023
+        </p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
